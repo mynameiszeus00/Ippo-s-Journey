@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/IppoLogo.png">
+    <style>
+        body {
+            
+            background: linear-gradient(90deg, #3e3f41, #e01c1c, #363838);
+            color: #3E4A59;
+            height: 100vh; 
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .submit-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background: linear-gradient(90deg, #ff0000, #d40000); 
+            color: white;
+            transition: transform 0.3s ease, background 0.3s ease; 
+        }
+
+        .submit-btn:hover {
+            transform: scale(1.05);
+            background: linear-gradient(90deg, #d40000, #ff0000); 
+        }
+
+        @keyframes buttonAnimation {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .submit-btn {
+            animation: buttonAnimation 1s ease-in-out;
+        }
+
+        form {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input[type="email"] {
+            padding: 8px 12px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<form action="Home.html" method="get">
+    <label for="email">Enter your email:</label>
+    <input type="email" name="username" id="email" placeholder="Enter your email" required 
+           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+           title="Please enter a valid email address. Example: name@gmail.com">
+    <input type="submit" value="Submit" class="submit-btn">
+</form>
+
+</body>
+</html>
