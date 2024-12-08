@@ -1,0 +1,1018 @@
+body, ul, li, h1, h2, h3, a, p {
+    font-variant: JIS83;
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', Courier, monospace;
+}
+
+body {
+    background: linear-gradient(90deg, #43535a96, #f8fc18, hwb(64 2% 8% / 0.397));
+    color: #3E4A59;
+}
+
+header {
+    background: linear-gradient(90deg, #3b73b4, #db864e, #46a1ec);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 10px rgba(223, 26, 26, 0.2);
+}
+
+header {
+    font-family: 'Verdana', Courier, monospace;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .logo {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #db864e;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 1;
+    min-width: 150px;
+  }
+  
+  .dropdown-content a {
+    color: #c00808;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #3b73b4;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.logo {
+    height: 60px; 
+    margin-right: 10px; 
+}
+
+footer {
+    background: linear-gradient(90deg, #4171b1, #d68464, hwb(64 2% 8% / 0.397));
+    padding: 40px; 
+    position: relative; 
+    bottom: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.footer-content {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.nav-buttons {
+    display: flex; 
+    justify-content: space-between; 
+    width: 100%; 
+    position: absolute;
+    left: 0; 
+    right: 0; 
+}
+
+.nav-button {
+    text-decoration: none;
+    font-size: 30px; 
+    color: #c70c0c; 
+    padding: 10px 15px; 
+    transition: background 0.3s; 
+    width: 50px; 
+    text-align: center; 
+    margin: 0 5px; 
+}
+
+.nav-button:hover {
+    background-color: rgba(166, 166, 166, 0.7); 
+    border-radius: 100px; 
+}
+
+.image-bg {
+    position: relative;
+    height: 110vh; 
+    max-width: 100%;
+    overflow: hidden;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 40%; 
+    left: 50%;  
+    transform: translateX(-50%);
+    text-align: center; 
+    color: #b9c879;
+    font-size: 40px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    padding: 30px;  
+    border: 8px solid rgb(255 34 34 / 80%); 
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 50px; 
+}
+
+.welcome-message {
+    text-align: justify;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #e9e9e9;
+}
+
+.welcome-message h3 {
+    font-size: 36px;
+    color: #f91111;
+}
+
+.welcome-message p {
+    font-size: 20px;
+    color: #236bc4;
+}
+
+.showcase {
+    display: flex;
+    flex-wrap: wrap; 
+    background-color: #7706067d;
+    justify-content: space-between; 
+    margin: 60px;
+    border-radius: 82px; 
+}
+
+.column {
+    display: block;
+    flex: 1;
+    margin: 0px;
+    max-width: 30%;
+    transition: transform 0.3s;
+}
+
+.column h3 {
+    color: #c7ce24;
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+
+.column video {
+    width: 0%;
+    border: 4px solid #0e4a68;
+    border-radius: 0px;
+    transition: transform 0.3s; 
+}
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px); 
+    }
+    60% {
+        transform: translateY(-5px); 
+    }
+}
+
+.column:hover {
+    animation: bounce 0.5s; 
+}
+
+.image-container:hover {
+    animation: bounce 0.5s; 
+}
+
+.column p {
+    font-size: 16px; 
+    color: #000000; 
+    margin-top: 10px; 
+    line-height: 1.5;
+    text-align: justify; 
+    font-family: monospace;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #FFD700;
+    color: #000;
+}
+
+audio {
+    margin: 20px 0;
+    width: 100%;
+    background-color: #FFD700;
+    border-radius: 8px;
+}
+
+.introduction {
+    display: flex; 
+    margin-bottom: 20px; 
+    background-color: rgb(239, 229, 229);
+    border: 12px solid #ffffff; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+.introduction h2 {
+    font-size: 40px; 
+    padding-bottom: 20px;
+    color: #E63946; 
+}
+
+.introduction-content-container {
+    flex: 2; 
+    padding: 20px; 
+}
+
+.introduction-content-container p {
+    font-size: 20px; 
+    color: #555; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding-top: 12px;
+}
+
+.introduction-image-container {
+    flex: 0 0 300px; 
+    margin-right: 40px; 
+    padding: 20px;
+    border: #dc5520;
+    border-radius: 12px;
+}
+
+.introduction-image {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.introduction-image:hover {
+    animation: bounce 0.5s; 
+}
+
+.content-container {
+    display: flex; 
+    gap: 20px; 
+}
+
+.teacher {
+    display: flex; 
+    margin-bottom: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #d9a3a3; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.teachers h2{
+    padding: 20px;
+    font-size: 40px;
+}
+.teacher-image-container {
+    flex: 0 0 300px;
+    margin-right: 40px;
+    padding: 20px; 
+    border: #dc5520;
+    border-radius: 12px;
+}
+
+.teacher-image {
+    width: 100%; 
+    height: 300px;
+    object-fit: contain;
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.teacher-image:hover {
+    animation: bounce 0.5s; 
+}
+
+.teacher-info {
+    flex: 2; 
+    padding: 20px; 
+}
+
+.teacher-info h3 {
+    margin-bottom: 10px; 
+    color: #3E4A59; 
+}
+
+.teacher-info p {
+    margin-bottom: 10px; 
+    color: #555;
+    text-align: justify; 
+}
+
+p::selection{
+    background-color: #f3b257;
+    color: white;
+}
+
+.class1 {
+    display: flex; 
+    margin-bottom: 20px; 
+    background-color: rgb(237, 248, 247);
+    border: 12px solid #ffffff; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+}
+
+.class1 h2 {
+    font-size: 30px; 
+    padding-bottom: 20px;
+    color: #E63946; 
+}
+
+.class1-content-container {
+    flex: 2; 
+    padding: 20px; 
+}
+
+.class1-content-container p {
+    font-size: 20px; 
+    color: #555; 
+    text-align: justify; 
+    margin-bottom: 20px; 
+    padding-top: 12px;
+}
+
+
+.class1-image-container {
+    flex: 0 0 400px;
+    margin-right: 40px; 
+    padding: 20px;
+    border: #dc5520;
+    border-radius: 12px;
+}
+
+.class1-image {
+    width: 100%; 
+    height: 400px;
+    object-fit: fill; 
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.class1-image:hover {
+    animation: bounce 0.5s; 
+}
+
+.content-container {
+    display: flex; 
+    gap: 20px; 
+}
+
+.classintro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+    overflow-x: auto;
+    text-align: center;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #f1ebeb;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-boxx;
+}
+
+.classintro video {
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    border-color: #dc5520;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.classintro h2 {
+    margin-bottom: 12px;
+    font-size: 30px;
+    color: #333;
+}
+
+.classintro:hover {
+    animation: bounce 0.5s;
+}
+
+.student {
+    display: flex; 
+    margin-bottom: 20px; 
+    background-color: #ffffff; 
+    border: 1px solid #d9a3a3; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.students h2{
+    padding: 20px;
+    font-size: 40px;
+}
+.student-image-container {
+    flex: 0 0 450px;
+    margin-right: 40px;
+    padding: 20px; 
+    border: #dc5520;
+    border-radius: 12px;
+}
+
+.student-image {
+    width: 100%; 
+    height: 300px;
+    object-fit: fill;
+    border-radius: 10px; 
+    transition: transform 0.3s; 
+}
+
+.student-image:hover {
+    animation: bounce 0.5s; 
+}
+
+.student-info {
+    flex: 2; 
+    padding: 20px; 
+}
+
+.student-info h3 {
+    margin-bottom: 15px; 
+    color: #cd6b2f; 
+    font-size: 30px;
+}
+
+.student-info p {
+    margin-bottom: 10px; 
+    color: #424040;
+    text-align: justify; 
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding: 20px;
+    font-size: 30px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    margin: 20px 0;
+    padding:  0;
+    justify-content: center;
+    background-color: #ede9e6;
+    border: #000;
+    border-radius: 15px;
+}
+
+.boxer-card {
+    width: 300px;
+    height: 400px;
+    perspective: 1000px;
+    position: relative;
+}  
+    .boxer-card:hover .card-front {
+    transform: rotateY(180deg);
+  }
+  
+  .boxer-card:hover .card-back {
+    transform: rotateY(0);
+  }
+  
+  .card-front, .card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    border-radius: 10px;
+  }
+  
+  .card-front {
+    background-color: white;
+    border: 1px solid #ccc;
+    transform: rotateY(0deg);
+  }
+  
+  .card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px; 
+  }
+  
+  .card-back {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    transform: rotateY(180deg);
+    padding: 10px; 
+    overflow-y: auto; 
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+  }
+  
+  .card-back h3, .card-back h4 {
+    margin: 5px 0; 
+    text-align: center;
+  }
+  
+  .card-back p {
+    margin: 5px 0; 
+    font-size: 14px;
+    text-align: justify; 
+  }  
+  
+  .showcase2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+}
+
+  .column2 {
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+  .column2 video {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border: 4px solid #dc5520;
+    border-radius: 10px;
+    transition: transform 0.3s; 
+}
+
+.column2 h3 {
+    color: #ec6715;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.column2:hover {
+    animation: bounce 0.5s; 
+}
+    
+@media screen and (min-width: 320px) and (max-width: 699px) {
+    body, p, h1, h2, h3 {
+        font-size: 14px; 
+    }
+
+    header {
+        padding: 5px;
+    }
+
+    .image-bg {
+        display: flex;
+        object-fit: fill;
+        height: 350px;
+        width: 100%;    
+    }
+
+    .welcome-message h3 {
+        font-size: 24px;
+    }
+
+    .welcome-message p {
+        font-size: 16px;
+    }
+
+    .showcase {
+        flex-direction: column; 
+    }
+
+    .column {
+        max-width: 100%; 
+        margin: 10px 0;  
+    }
+
+    .teacher {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .teacher-image-container {
+        margin: 0;
+        padding: 10px;
+        flex: 1;
+    }
+
+    .teacher-info {
+        padding: 10px;
+    }
+
+    .teacher-info h3 {
+        font-size: 20px;
+    }
+
+    .teacher-info p {
+        font-size: 14px;
+    }
+
+    .introduction {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .introduction .content-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .introduction .image-container {
+        margin-bottom: 20px; 
+        max-width: 100%;
+    }
+
+    .introduction p {
+        max-width: 100%; 
+        font-size: 14px;
+    }
+
+    .ua-image {
+        height: 200px;
+        width: 100%; 
+    }
+
+    .class1 {
+        flex-direction: column; 
+        margin-bottom: 15px; 
+        padding: 15px; 
+    }
+
+    .class1 h2 {
+        font-size: 26px; 
+    }
+
+    .class1-content-container {
+        padding: 15px; 
+    }
+
+    .class1-content-container p {
+        font-size: 18px; 
+    }
+
+    .class1-image-container {
+        flex: 0 0 auto; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .class1-image {
+        height: 400px; 
+    }
+
+    .classintro {
+        padding: 8px; 
+    }
+
+    .classintro video {
+        width: 90%; 
+        max-width: 100%; 
+    }
+
+    .classintro h2 {
+        font-size: 28px; 
+    }
+
+    .student {
+        flex-direction: column; 
+        margin-bottom: 15px; 
+    }
+
+    .student-image-container {
+        flex: 0 0 auto; 
+        margin-right: 0; 
+        margin-bottom: 10px; 
+    }
+
+    .student-image {
+        height: 200px; 
+    }
+
+    .student-info {
+        padding: 10px; 
+    }
+
+    .student-info h3 {
+        font-size: 24px; 
+    }
+
+    .student-info p {
+        font-size: 18px; 
+    }
+
+    .students h2 {
+        font-size: 30px; 
+        padding: 10px;
+    }
+
+    .carousel {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .boxer-card {
+        width: 300px; 
+        height: 400px; 
+        margin: 10px 0; 
+    }
+    .showcase2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+    footer p {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
+
+@media screen and (min-width:700px) and (max-width: 960px) {
+    .image-bg {
+        display: flex;
+        object-fit: fill;
+        height: 600px;
+        width: 100%;
+    }
+    
+    .showcase {
+        flex-direction: column; 
+        column-count: calc(2);
+    }
+
+    .column {
+        max-width: 100%;
+        margin: 10px 0;  
+    }
+
+    .teacher {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .teacher-image-container {
+        margin: 0;
+        padding: 10px;
+        flex: 1;
+    }
+
+    .teacher-info {
+        padding: 10px;
+    }
+
+    .teacher-info h3 {
+        font-size: 20px;
+    }
+
+    .teacher-info p {
+        font-size: 17px;
+    }
+
+    .introduction {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .introduction .content-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .introduction-content-container {
+        margin: 0;
+        padding: 10px;
+        flex: 1;
+    }
+
+    .introduction p {
+        max-width: 100%; 
+        font-size: 14px;
+    }
+
+    .ua-image {
+        height: 200px;
+        width: 100%;
+    }
+
+    .student {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .student-image-container {
+        margin: 0;
+        padding: 10px;
+        flex: 1;
+    }
+
+    .student-info {
+        padding: 10px;
+    }
+
+    .student-info h3 {
+        font-size: 20px;
+    }
+
+    .student-info p {
+        font-size: 17px;
+    }
+
+    .class1 {
+        flex-direction: column; 
+        text-align: center; 
+    }
+
+    .class1 .content-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .class1 .image-container {
+        margin-bottom: 12px; 
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .class1 h2 {
+        padding-top: 2px;
+    }
+
+    .class1 p {
+        max-width: 100%; 
+        font-size: 20px;
+    }
+
+    .class1-image {
+        height: 400px;
+        width: 500px;
+    }
+
+    .classintro {
+        padding: 12px;
+    }
+
+    .classintro video {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .classintro h2 {
+        font-size: 32px;
+    }
+
+    }
+
+    footer p {
+        overflow-x: hidden;
+        font-size: 16px;
+    }
+
+@media screen and (min-width: 961px) and (max-width: 1400px) {
+    .column {
+        max-width: 30%; 
+    }
+
+    .teacher-image-container {
+        flex: 0 0 300px;
+    }
+
+    .teacher-info h3 {
+        font-size: 28px;
+    }
+
+    .introduction .image-container {
+        max-width: 40%; 
+    }
+
+    .ua-image {
+        height: 300px;
+        width: 100%;
+    }
+
+    .introduction p {
+        max-width: 100%; 
+        font-size: 20px;
+    }
+
+    
+
+    .class1 {
+        flex-direction: row;
+        margin-bottom: 30px;
+        padding: 30px;
+    }
+
+    .class1 h2 {
+        font-size: 30px;
+    }
+
+    .class1-content-container {
+        padding: 30px;
+    }
+
+    .class1-content-container p {
+        font-size: 22px;
+    }
+
+    .class1-image-container {
+        flex: 0 0 250px;
+        margin-right: 20px;
+    }
+
+    .class1-image {
+        height: 280px;
+        display: block;
+    }
+
+    .classintro {
+        padding: 20px;
+    }
+
+    .classintro video {
+        width: 80%;
+        max-width: 100%;
+    }
+
+    .classintro h2 {
+        font-size: 34px;
+    }
+
+    .student {
+        flex-direction: row;
+        margin-bottom: 30px;
+    }
+
+    .student-image-container {
+        flex: 0 0 180px;
+        margin-right: 20px;
+    }
+
+    .student-image {
+        height: 260px;
+    }
+
+    .student-info {
+        padding: 20px;
+    }
+
+    .student-info h3 {
+        font-size: 28px;
+    }
+
+    .student-info p {
+        font-size: 22px;
+    }
+
+    .students h2 {
+        font-size: 36px;
+        padding: 20px;
+    }
+
+    footer p {
+        overflow-x: hidden;
+        font-size: 16px;
+
+}
+}
